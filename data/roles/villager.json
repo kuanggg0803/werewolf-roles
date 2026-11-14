@@ -1,0 +1,19 @@
+{
+  "id": "villager",
+  "name": "平民",
+  "camp": "villager",
+  "glyph": "民",
+  "summary": "沒有技能，靠觀察和推理找出狼人。",
+  "night_order": null,
+  "skills": [
+    "沒有任何技能，白天參與發言與投票。"
+  ],
+  "limits": [],
+  "interactions": [],
+  "tips": [
+    "仔細聽每個人的發言，找出前後矛盾。",
+    "不要假冒神職，以免干擾真神職的判斷。",
+    "投票時跟著有邏輯的好人走，避免分票。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

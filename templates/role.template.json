@@ -1,0 +1,18 @@
+{
+  "id": "english-id",
+  "name": "中文名稱",
+  "camp": "wolf | god | villager | third",
+  "glyph": "字",
+  "summary": "一句話介紹，30 字以內",
+  "night_order": null,
+  "skills": [
+    "能力一"
+  ],
+  "limits": [],
+  "interactions": [],
+  "tips": [
+    "常見打法一",
+    "常見打法二"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>狼人殺角色圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">狼人殺<span>角色圖鑑</span></a>
+      <nav><a href="#roles">角色</a><a href="#night-order">夜晚順序</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>天黑請閉眼</h1>
+      <p>收錄 <span id="count">—</span> 個狼人殺角色的能力、限制、互動與常見打法，每個角色都用同一套格式整理，方便比較與查詢。</p>
+    </div>
+
+    <section id="roles">
+      <h2>角色</h2>
+      <p class="lead">點選卡片查看詳細規則。</p>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="night-order">
+      <h2>夜晚行動順序</h2>
+      <p class="lead">主持人依此順序喚醒角色；只列出本站已收錄、且夜晚會行動的角色。</p>
+      <ol class="night" id="night"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">規則整理自冒險安迪〈狼人殺－角色能力和基礎規則〉。各桌常有自訂規則，實際遊戲以主持人宣布為準。</div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

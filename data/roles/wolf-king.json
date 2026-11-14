@@ -1,0 +1,35 @@
+{
+  "id": "wolf-king",
+  "name": "狼王",
+  "camp": "wolf",
+  "glyph": "王",
+  "summary": "出局時可以開槍帶走一名玩家的狼人。",
+  "night_order": 20,
+  "skills": [
+    "夜晚和其他狼人一起殺人。",
+    "死亡時可以帶走一名玩家，效果和獵人開槍相同。"
+  ],
+  "limits": [
+    "被女巫毒死時不能發動技能。",
+    "因情侶關係殉情時不能發動技能。"
+  ],
+  "interactions": [
+    {
+      "with": "witch",
+      "text": "被女巫毒死時無法帶人。"
+    },
+    {
+      "with": "hunter",
+      "text": "技能效果和獵人相同，夜晚由主持人確認要帶走的人。"
+    },
+    {
+      "with": "cupid",
+      "text": "成為情侶後若殉情，不能發動技能。"
+    }
+  ],
+  "tips": [
+    "被投票出局時優先帶走預言家或已暴露的神職。",
+    "常用來加強狼人陣營，適合好人勝率偏高的桌。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

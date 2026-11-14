@@ -1,0 +1,26 @@
+{
+  "id": "guard",
+  "name": "守衛",
+  "camp": "god",
+  "glyph": "守",
+  "summary": "每晚守護一名玩家，使他不被狼人殺害。",
+  "night_order": 5,
+  "skills": [
+    "每晚可以守護一名玩家，被守護者當晚不會被狼人殺害。",
+    "可以守護自己，也可以選擇不守。"
+  ],
+  "limits": [
+    "不能連續兩晚守護同一名玩家。"
+  ],
+  "interactions": [
+    {
+      "with": "werewolf",
+      "text": "守護成功時，當晚狼刀無效。"
+    }
+  ],
+  "tips": [
+    "預言家跳身分後，常輪流守護預言家。",
+    "守衛身分越晚暴露越好，避免被狼人優先刀掉。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

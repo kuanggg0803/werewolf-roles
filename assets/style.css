@@ -1,0 +1,118 @@
+:root {
+  --bg: #0f1420;
+  --bg-raised: #171e2d;
+  --line: #2a3347;
+  --text: #ece6d8;
+  --text-muted: #9aa3b5;
+  --wolf: #c4554d;
+  --god: #d4a849;
+  --villager: #7fa58c;
+  --third: #a17fc9;
+  --radius: 12px;
+  --serif: "Noto Serif TC", "Songti TC", serif;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.7;
+}
+
+a { color: inherit; }
+
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+/* 頁首 */
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.brand { font-family: var(--serif); font-weight: 700; font-size: 18px; text-decoration: none; letter-spacing: .05em; }
+.brand span { color: var(--god); }
+.site-header nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; margin-left: 20px; }
+.site-header nav a:hover { color: var(--text); }
+
+/* 首頁開場 */
+.hero { padding: 56px 0 32px; }
+.hero h1 { font-family: var(--serif); font-size: clamp(28px, 6vw, 44px); margin: 0 0 8px; letter-spacing: .04em; }
+.hero p { color: var(--text-muted); margin: 0; max-width: 560px; }
+
+/* 篩選 */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.filter {
+  border: 1px solid var(--line); background: transparent; color: var(--text-muted);
+  padding: 6px 14px; border-radius: 999px; font: inherit; font-size: 14px; cursor: pointer;
+}
+.filter[aria-pressed="true"] { color: var(--text); border-color: var(--text); }
+
+/* 角色卡片 */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.card {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px; text-decoration: none; transition: border-color .15s;
+}
+.card:hover { border-color: var(--camp); }
+.glyph {
+  flex: none; width: 48px; height: 48px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--serif); font-size: 22px; font-weight: 700;
+  color: var(--camp); border: 1.5px solid var(--camp);
+}
+.card h3 { margin: 0; font-size: 17px; }
+.card p { margin: 4px 0 0; font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+.camp-tag { font-size: 12px; color: var(--camp); }
+
+[data-camp="wolf"] { --camp: var(--wolf); }
+[data-camp="god"] { --camp: var(--god); }
+[data-camp="villager"] { --camp: var(--villager); }
+[data-camp="third"] { --camp: var(--third); }
+
+/* 夜晚順序 */
+section { margin: 48px 0; }
+section > h2 { font-family: var(--serif); font-size: 22px; margin: 0 0 6px; }
+section > .lead { color: var(--text-muted); margin: 0 0 20px; font-size: 14px; }
+.night { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+.night li { position: relative; padding: 0 0 18px 24px; }
+.night li::before {
+  content: ""; position: absolute; left: -5px; top: 9px;
+  width: 9px; height: 9px; border-radius: 50%; background: var(--camp);
+}
+.night .step { color: var(--text-muted); font-size: 13px; margin-right: 8px; font-variant-numeric: tabular-nums; }
+.night a { font-weight: 700; text-decoration: none; }
+.night a:hover { text-decoration: underline; }
+
+/* 詳細頁 */
+.back { display: inline-block; margin: 24px 0 0; color: var(--text-muted); text-decoration: none; font-size: 14px; }
+.back:hover { color: var(--text); }
+.role-head { display: flex; gap: 20px; align-items: center; padding: 28px 0 8px; }
+.role-head .glyph { width: 76px; height: 76px; font-size: 36px; border-width: 2px; }
+.role-head h1 { font-family: var(--serif); font-size: 34px; margin: 0; letter-spacing: .05em; }
+.role-head .summary { margin: 4px 0 0; color: var(--text-muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
+.pill { border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; font-size: 13px; color: var(--text-muted); }
+.pill.camp { color: var(--camp); border-color: var(--camp); }
+
+.blocks { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 24px 0; }
+.block { background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.block h2 { margin: 0 0 10px; font-size: 15px; letter-spacing: .08em; color: var(--text-muted); }
+.block ul { margin: 0; padding-left: 20px; }
+.block li + li { margin-top: 6px; }
+.block.note { border-style: dashed; }
+.block .empty { color: var(--text-muted); margin: 0; font-size: 14px; }
+.interactions a { font-weight: 700; color: var(--camp); text-decoration: none; }
+.interactions a:hover { text-decoration: underline; }
+
+.source { color: var(--text-muted); font-size: 13px; margin: 8px 0 0; }
+.source a { color: var(--text-muted); }
+
+.site-footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 24px 0 40px; color: var(--text-muted); font-size: 13px; }
+
+.error { color: var(--wolf); }

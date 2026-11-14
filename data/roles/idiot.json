@@ -1,0 +1,21 @@
+{
+  "id": "idiot",
+  "name": "白痴",
+  "camp": "god",
+  "glyph": "痴",
+  "summary": "被投票放逐時可以翻牌免死一次。",
+  "night_order": null,
+  "skills": [
+    "被投票放逐時，可以翻開身分牌免於出局，當天沒有人被放逐。"
+  ],
+  "limits": [
+    "免死能力只能用一次。",
+    "翻牌後，之後的回合不能再參與投票。"
+  ],
+  "interactions": [],
+  "tips": [
+    "被誤投時翻牌，可以讓好人少損失一輪。",
+    "翻牌後仍可發言，可以繼續用推理幫助好人。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

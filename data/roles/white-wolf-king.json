@@ -1,0 +1,19 @@
+{
+  "id": "white-wolf-king",
+  "name": "白狼王",
+  "camp": "wolf",
+  "glyph": "白",
+  "summary": "自爆時可以同時帶走一名玩家的狼人。",
+  "night_order": 7,
+  "skills": [
+    "夜晚和其他狼人一起殺人。",
+    "白天自爆時，可以同時殺死一名玩家。"
+  ],
+  "limits": [],
+  "interactions": [],
+  "tips": [
+    "在預言家或關鍵神職暴露後自爆，一次換掉一名重要好人。",
+    "自爆會直接進入夜晚，可以打斷對狼人不利的投票。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

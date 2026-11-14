@@ -1,0 +1,27 @@
+{
+  "id": "cupid",
+  "name": "丘比特",
+  "camp": "third",
+  "glyph": "丘",
+  "summary": "第一晚指定兩名玩家成為情侶。",
+  "night_order": 3,
+  "skills": [
+    "第一晚指定兩名玩家成為情侶，可以包含自己。",
+    "情侶之後會睜眼互相確認。"
+  ],
+  "limits": [
+    "只在第一晚行動。",
+    "情侶其中一人死亡時，另一人立刻殉情，殉情時不能發動技能。"
+  ],
+  "interactions": [
+    {
+      "with": "wolf-king",
+      "text": "狼王成為情侶並殉情時，不能帶人。"
+    }
+  ],
+  "tips": [
+    "若情侶是一狼一好人，丘比特和情侶自成第三方，要讓其他所有玩家出局才獲勝。",
+    "若情侶同陣營，丘比特跟著那個陣營獲勝。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

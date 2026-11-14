@@ -1,0 +1,16 @@
+{
+  "roles": [
+    "werewolf",
+    "wolf-king",
+    "white-wolf-king",
+    "hidden-wolf",
+    "seer",
+    "witch",
+    "hunter",
+    "guard",
+    "idiot",
+    "knight",
+    "villager",
+    "cupid"
+  ]
+}

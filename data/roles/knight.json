@@ -1,0 +1,24 @@
+{
+  "id": "knight",
+  "name": "騎士",
+  "camp": "god",
+  "glyph": "騎",
+  "summary": "白天可以翻牌和一名玩家決鬥的神職。",
+  "night_order": null,
+  "skills": [
+    "白天投票前可以隨時翻牌，指定一名玩家決鬥，對方也要翻牌。",
+    "對方是狼人：狼人死亡，直接進入夜晚。",
+    "對方是好人：騎士自己死亡，白天繼續發言。"
+  ],
+  "limits": [
+    "必須在白天投票之前發動。"
+  ],
+  "interactions": [
+    {"with": "werewolf", "text": "決鬥到狼人時，狼人死亡並直接進入夜晚。"}
+  ],
+  "tips": [
+    "確定某人是狼再決鬥，決鬥到好人會讓好人陣營少兩人。",
+    "預言家查殺的玩家是常見的決鬥目標，可以驗證查殺真假。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}

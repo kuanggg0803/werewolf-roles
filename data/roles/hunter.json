@@ -1,0 +1,30 @@
+{
+  "id": "hunter",
+  "name": "獵人",
+  "camp": "god",
+  "glyph": "獵",
+  "summary": "出局時可以開槍帶走一名玩家。",
+  "night_order": 19,
+  "skills": [
+    "被投票出局或被狼人殺害時，可以亮牌開槍，帶走一名玩家。"
+  ],
+  "limits": [
+    "被女巫毒死時不能開槍。",
+    "因情侶關係殉情時不能開槍。"
+  ],
+  "interactions": [
+    {
+      "with": "witch",
+      "text": "被女巫毒死時不能開槍。"
+    },
+    {
+      "with": "wolf-king",
+      "text": "狼王的帶人技能和獵人開槍效果相同。"
+    }
+  ],
+  "tips": [
+    "身分暴露後狼人通常不敢刀，可以適度跳身分保護好人。",
+    "開槍前先確認目標，帶走好人會嚴重拖累好人陣營。"
+  ],
+  "source": "https://andyventure.com/boardgame-langrensha/"
+}
